@@ -1,4 +1,8 @@
 keywords = {
+	'TEEN' : 'Get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
+	'HOPELESS' : 'Get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
+	'HOPE' : 'Get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
+	'STOP' : 'Did you mean STOP or stop? Text TEEN to (478) 449 4383 to begin this program again. Or visit https://www.smokefree.gov whenever you need help staying smoke free.',
 	'UHOH' : 'If you have found yourself smoking a cigarette, text the keyword HELP for professional consulting. If you are experiencing headache or pains, text the keyword PAIN to receive medical advice.',
 	'PAIN' : 'If you have nausea or headaches, text SICK for a treatment. Reply BURN if you have been burned by a match or cigarette. If you swallowed a cigarette, you’re one down! Text HOPELESS to restart the program.',
 	'BURN' : 'If you need immediate medical assistance, text SOS to call a professional team of cigarette (and occasionally water) burn specialists to evacuate your house and isolate the problem before giving you the treatment you deserve. If it is a minor burn, text RED to order and ship an ice cube.',
