@@ -1,4 +1,5 @@
 import requests
+import pyperclip
 confirmation='N'
 keyword = ''
 
@@ -10,4 +11,4 @@ while confirmation=='N':
 url = 'https://fakesmsbot.herokuapp.com/'
 data = {'keyword':keyword}
 r = requests.post(url, json=data)
-print(r.status_code)
+print(r)
