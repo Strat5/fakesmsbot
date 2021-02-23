@@ -11,7 +11,7 @@ def webhook():
 	data = request.get_json()
 	keyword = data["keyword"]
 	log('The keyword "{}" was receieved.'.format(keyword))
-	if keyword == 'stop':
+	if keyword == 'end':
 		message = 'That is not a recognized keyword. Text STOP to end this program. Text TEEN to restart it.'
 	elif keyword.upper() in script.keywords:
 		message = 'SmokefreeTXT: ' + script.keywords[keyword]
