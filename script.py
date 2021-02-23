@@ -8,7 +8,7 @@ keywords = {
 	'SICK' : 'If you are nauseous, you should have selected Ï swallowed a cigarette. If it is unrelated, you are contacting the wrong services. Test HOPELESS to restart the program.',
 	'BURN' : 'If you need immediate medical assistance, text SOS to call a professional team of cigarette (and occasionally water) burn specialists to evacuate your house and isolate the problem before giving you the treatment you deserve. If it is a minor burn, text RED to order and ship an ice cube.',
 	'RED' : 'Your ice cube has been shipped from Chandler, AZ. Reply SAFE to restart the program.',
-	'SOS' : 'A team has been dispatched to your location using the addressyou provided. Please remain calm and give them at least 10 minutes to arrive. Text END to cancel the request.',
+	'SOS' : 'A team has been dispatched to your location using the address you provided. Please remain calm and give them at least 10 minutes to arrive. Text END to cancel the request.',
 	'HELP' : 'You accidently started smoking. It’s O.K.! Reply with the keyword RANDOM if it was absent minded. Reply ME if it was intentional.',
 	'RANDOM' : 'It was an accident. Put the cigarette away, and have a glass of cold water. Record the day and time in your journal, and try to take your mind off of the incident. Reply TEEN to restart.',
 	'ME' : 'What do you expect us to do? If you cannot control your body, you need real help, And fast. You should be embarrassed with yourself. Text TEEN to restart the program. Text FAILURE to end your social life.',
