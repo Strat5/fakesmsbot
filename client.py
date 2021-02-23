@@ -1,3 +1,5 @@
+import os
+import signal
 import requests
 import pyperclip
 confirmation='N'
@@ -12,3 +14,4 @@ url = 'https://fakesmsbot.herokuapp.com/'
 data = {'keyword':keyword}
 r = requests.post(url, json=data)
 print(r)
+pyperclip.copy(r.text)

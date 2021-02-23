@@ -9,9 +9,9 @@ import script
 @app.route('/', methods=['POST'])	#clients feed this endpoint
 def webhook():
 	data = request.get_json()
-	keyword = data["keyword"]
+	keyword = data["keyword"].upper()
 	log('The keyword "{}" was receieved.'.format(keyword))
-	message = script.keywords[keyword]
+	message = 'SmokefreeTXT: ' + script.keywords[keyword]
 	return message, 200
 
 def log(msg): 
