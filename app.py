@@ -14,7 +14,7 @@ def webhook():
 	if keyword == 'end':
 		message = 'That is not a recognized keyword. Text STOP to end this program. Text TEEN to restart it.'
 	elif keyword.upper() in script.keywords:
-		message = 'SmokefreeTXT: ' + script.keywords[keyword]
+		message = 'SmokefreeTXT: ' + script.keywords[keyword.upper()]
 	else: 
 		message = 'That is not a recognized keyword. Text STOP to end this program. Text TEEN to restart it.'
 	return message, 200
