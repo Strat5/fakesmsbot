@@ -1,4 +1,6 @@
 keywords = {
+        'S1' : 'Welcome to SmokefreeTXT. Congratulations on your decision to stop smoking. To end this program, text END to (478) 449 4383. Msg&data rates may apply.',
+        'S2' : 'And get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
 	'TEEN' : 'Get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
 	'HOPELESS' : 'Get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
 	'HOPE' : 'Get more support whenever you need it by texting these keywords at any time: WANT, BOOST, or UHOH. Try it now!',
