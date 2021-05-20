@@ -4,20 +4,33 @@ import requests
 import pyperclip
 import webbrowser
 
-keyword = input('Enter the keyword: ')
+print('')
+keyword = input('Your next message will be added to your clipboard after you enter their latest one-word response: ')
 if(keyword == 'WAR_FILES'):
-	keyword = input('Please enter the Document ID: ')
-	if(keyword == 'backup_communication'):
-		url = 'https://docs.google.com/document/d/1_CUCJjSI2kxA984FsZSq4gLT4Xr1r8XMWQcuXHLNX60/edit?usp=sharing'
-		webbrowser.open_new(url)
-	elif(keyword == 'declaration_of_war'):
-		keyword = input("Are you sure you want to view this? It may be too intimidating for you.")
-		url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-		webbrowser.open_new(url)
-	exit()
+	war_files()
 
-url = 'https://fakesmsbot.herokuapp.com/'
-data = {'keyword':keyword}
-r = requests.post(url, json=data)
-pyperclip.copy(r.text)
-print(r)
+else:
+	url = 'https://fakesmsbot.herokuapp.com/'
+	data = {'keyword':keyword}
+	r = requests.post(url, json=data)
+	pyperclip.copy(r.text)
+	print(r)
+
+def war_files():
+	print('')
+	print('You are now accessing property of the ------- Government.')
+	print('Please allow time to secure the connection.')
+	print('')
+	time.sleep(5)
+	codename = input('Give your assigned codename. ')
+	pwd = input('Give your PIN: ')
+	file = input('What is the file you need? ')
+	url = 'https://fakesmsbot.herokuapp.com/wartime'
+	data = {'codename':codename, 'pwd':pwd, 'file':file}
+	r = requests.post(url, json=data)
+	if r.text[0:5] == 'http':
+		webbrowser.open_new(r.text)
+		exit()
+	else: 
+		print(r.text)
+		time.sleep(5)
