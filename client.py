@@ -3,19 +3,7 @@ import signal
 import requests
 import pyperclip
 import webbrowser
-
-print('')
-keyword = input('Your next message will be added to your clipboard after you enter their latest one-word response: ')
-if(keyword == 'WAR_FILES'):
-	war_files()
-
-else:
-	url = 'https://fakesmsbot.herokuapp.com/'
-	data = {'keyword':keyword}
-	r = requests.post(url, json=data)
-	pyperclip.copy(r.text)
-	print(r)
-
+import time
 def war_files():
 	print('')
 	print('You are now accessing property of the ------- Government.')
@@ -34,3 +22,15 @@ def war_files():
 	else: 
 		print(r.text)
 		time.sleep(5)
+
+print('')
+keyword = input('Your next message will be added to your clipboard after you enter their latest one-word response: ')
+if(keyword == 'WAR_FILES'):
+	war_files()
+
+else:
+	url = 'https://fakesmsbot.herokuapp.com/'
+	data = {'keyword':keyword}
+	r = requests.post(url, json=data)
+	pyperclip.copy(r.text)
+	print(r)
