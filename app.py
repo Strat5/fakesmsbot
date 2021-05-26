@@ -20,6 +20,25 @@ def webhook():
 		message = 'That is not a recognized keyword. Text END to end this program. Text TEEN to restart it.'
 	return message, 200
 
+@app.route('/wartime', endpoint = 'wartime', methods=['POST'])
+def webhook():
+	data = request.get_json()
+	codename = data['codename']
+	pwd = data['pwd']
+	file = data['file']
+	if(codename in war.codenames):
+		if(pwd == war.codenames[codename]):
+			if(file in war.project_files):
+				permission = false
+				for i in war.project_files[access]:
+					if i == codename: 
+						permission == true
+				if permission == true:
+					return war.project_files[file[url]], 200
+					exit()
+
+	return 'Security Breach. Access Cancelled.', 200	
+
 def log(msg): 
 	print(str(msg))
 	sys.stdout.flush()
