@@ -24,7 +24,7 @@ def war_files():
 		time.sleep(5)
 
 print('')
-keyword = input('Your next message will be added to your clipboard after you enter their latest one-word response: ')
+keyword = input('Enter the keyword: ')
 if(keyword == 'WAR_FILES'):
 	war_files()
 

@@ -6,5 +6,5 @@ project_files = {
 }
 
 codenames = {
-	'golden goose' : '9Fr!3'
+	'golden goose' : '86543'
 }

@@ -20,7 +20,7 @@ def webhook():
 		message = 'That is not a recognized keyword. Text END to end this program. Text TEEN to restart it.'
 	return message, 200
 
-@app.route('/wartime', methods=['POST']):
+@app.route('/wartime', methods=['POST'])
 def webhook():
 	data = request.get_json()
 	codename = data['codename']
