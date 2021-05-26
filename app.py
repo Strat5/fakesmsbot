@@ -29,15 +29,16 @@ def webhook():
 	if(codename in war.codenames):
 		if(pwd == war.codenames[codename]):
 			if(file in war.project_files):
-				permission = false
+				permission = False
 				for i in war.project_files[access]:
 					if i == codename: 
-						permission == true
-				if permission == true:
+						permission == True
+				if permission == True:
 					return war.project_files[file[url]], 200
 					exit()
 
-	return 'Security Breach. Access Cancelled.', 200	
+	if(permission == False):
+		return 'Security Breach. Access Cancelled.', 200	
 
 def log(msg): 
 	print(str(msg))
