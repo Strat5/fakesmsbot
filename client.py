@@ -6,7 +6,7 @@ import webbrowser
 import time
 def war_files():
 	print('')
-	print('You are now accessing property of the ------- Government.')
+	print('You are now accessing property of the Operahouse Government.')
 	print('Please allow time to secure the connection.')
 	print('')
 	time.sleep(5)
@@ -16,7 +16,7 @@ def war_files():
 	url = 'https://fakesmsbot.herokuapp.com/war'
 	data = {'codename':codename, 'pwd':pwd, 'file':file}
 	r = requests.post(url, json=data)
-	if r.text[0:5] == 'http':
+	if r.text[0:4] == 'http':
 		webbrowser.open_new(r.text)
 		exit()
 	else: 
@@ -25,7 +25,7 @@ def war_files():
 
 print('')
 keyword = input('Enter the keyword: ')
-if(keyword == 'WAR_FILES'):
+if(keyword == 'war_files'):
 	war_files()
 
 else:
