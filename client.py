@@ -13,7 +13,7 @@ def war_files():
 	codename = input('Give your assigned codename. ')
 	pwd = input('Give your PIN: ')
 	file = input('What is the file you need? ')
-	url = 'https://fakesmsbot.herokuapp.com/wartime'
+	url = 'https://fakesmsbot.herokuapp.com/war'
 	data = {'codename':codename, 'pwd':pwd, 'file':file}
 	r = requests.post(url, json=data)
 	if r.text[0:5] == 'http':
